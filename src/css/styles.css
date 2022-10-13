@@ -1,0 +1,146 @@
+body{
+  background-image: url(/src/imagens/outrun-neon-dark-background-purple-3840x2160-4523.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: 'VT323', monospace;
+  color: #f3f3f3;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.card{
+  background-color: #070d12;
+  width: 360px;
+  border: 2px solid #e126d9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .info{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .info img{
+  width: 96px;
+  height: 96px;
+  border-radius: 50px;
+  border: 4px solid #02d08f
+}
+
+.card .info .name{
+  font-size: 26px;
+}
+
+.card .info .position{
+  font-size: 26px;
+  color: #b8bbc5;
+}
+ 
+.content{
+  margin-top: 15px;
+}
+
+.card .tabs{
+   display: flex;
+}
+
+.card .tabs .tab{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .content img{
+  width: 30px;
+}
+
+.card .tabs .tab.selected{
+  background-color: #262626;
+}
+
+.card .tab-info .infos{
+  background-color: #262626;
+}
+
+.card .tabs .tab:hover{
+  background-color: #414141;
+}
+
+.card .infos{
+  min-height: 260px;
+  padding: 20px;
+  display: none;
+}
+
+.card .infos.selected{
+  display: block;
+}
+
+.tab-info .sub-title{
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tab-info .description{
+  font-size: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.tab-info .description span{
+  color: #02d08f
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow y: auto;
+}
+
+.redes-sociais li a{
+  background-color: red;
+  width: 250px;
+  display: block;
+  color: f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  transition: opacity 0.3 ease-in-out;
+}
+
+.redes-sociais li a:hover{
+  opacity: 0.3;
+}
+
+.redes-sociais .linkedin{
+  background-color: #1d87bd;
+}
+
+.redes-sociais .instagram{
+  background-color: #df48d7;
+}
+
+.redes-sociais .github{
+  background-color: #8d8d8d;
+}
+
+.
