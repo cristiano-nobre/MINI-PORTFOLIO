@@ -15,7 +15,7 @@ body{
   padding: 30px;
 }
 
-.card{
+.cartao{
   background-color: #070d12;
   width: 360px;
   border: 2px solid #e126d9;
@@ -23,7 +23,7 @@ body{
   overflow: hidden;
 }
 
-.card .info{
+.cartao .minhas-informacoes{
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -31,31 +31,31 @@ body{
   gap: 10px;
 }
 
-.card .info img{
+.cartao .minhas-informacoes img{
   width: 96px;
   height: 96px;
   border-radius: 50px;
   border: 4px solid #02d08f
 }
 
-.card .info .name{
+.cartao .minhas-informacoes .nome{
   font-size: 26px;
 }
 
-.card .info .position{
+.cartao .minhas-informacoes .cargo{
   font-size: 26px;
   color: #b8bbc5;
 }
  
-.content{
+.cartao .conteudo{
   margin-top: 15px;
 }
 
-.card .tabs{
+.cartao .abas{
    display: flex;
 }
 
-.card .tabs .tab{
+.cartao .abas .aba{
   width: 50%;
   display: flex;
   justify-content: center;
@@ -64,46 +64,48 @@ body{
   transition: background-color 0.2s ease-in-out;
 }
 
-.card .content img{
+.cartao .abas img{
   width: 30px;
 }
 
-.card .tabs .tab.selected{
+.cartao .abas .aba.selecionado{
   background-color: #262626;
 }
 
-.card .tab-info .infos{
+.cartao .informacoes-abas{
   background-color: #262626;
 }
 
-.card .tabs .tab:hover{
+.cartao .abas .aba:hover{
   background-color: #414141;
 }
 
-.card .infos{
+.informacoes-abas .informacao{
   min-height: 260px;
   padding: 20px;
   display: none;
 }
 
-.card .infos.selected{
+.informacoes-abas .informacao.selecionado{
   display: block;
 }
 
-.tab-info .sub-title{
+.informacoes-abas .sub-titulo{
   font-size: 22px;
   margin-bottom: 25px;
-  text-align: center;
+    text-align: center;
 }
 
-.tab-info .description{
+.informacoes-abas .descricao{
   font-size: 20px;
   max-height: 200px;
   overflow-y: auto;
   padding-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-.tab-info .description span{
+.informacoes-abas .descricao span{
   color: #02d08f
 }
 
@@ -113,7 +115,7 @@ body{
   gap: 25px;
   align-items: center;
   max-height: 180px;
-  overflow y: auto;
+  overflow-y: auto;
 }
 
 .redes-sociais li a{
